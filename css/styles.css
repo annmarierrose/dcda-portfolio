@@ -7,7 +7,7 @@
    CSS Variables (Color Scheme)
    ========================= */
 :root {
-    --primary-color: #1e3a5f;      /* Ocean Blue */
+    --primary-color: #3939cd;      /* Ocean Blue */
     --secondary-color: #3b82f6;    /* Light Blue */
     --accent-color: #f43f5e;       /* Coral accent */
     --text-color: #333;            /* Dark gray for text */
@@ -61,7 +61,7 @@ header p {
 }
 
 nav {
-    background-color: #3d1461;
+    background-color: #8be0ff;
     padding: 0.75rem;
     display: flex;              /* Make nav a flex container */
     justify-content: center;    /* Center the ul inside nav */
