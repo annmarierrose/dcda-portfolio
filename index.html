@@ -109,10 +109,21 @@
         </section>
     </main>
 
+    <!-- Dark Mode Toggle Button -->
+    <button class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+
     <!-- Footer: Links and copyright -->
     <footer>
         <p><a href="https://github.com/annmarierrose/annmarierrose">View Repository on GitHub</a></p>
         <p>&copy; 2026 Annmarie Rose | DCDA 40833 | TCU</p>
     </footer>
+
+    <script>
+        const toggle = document.querySelector('.dark-mode-toggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        });
+    </script>
 </body>
 </html>
