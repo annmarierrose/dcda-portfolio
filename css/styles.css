@@ -418,3 +418,119 @@ footer a:hover {
         page-break-inside: avoid;
     }
 }
+
+/* =========================
+   Dark Mode Toggle Button
+   ========================= */
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 1000;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* =========================
+   Dark Mode Overrides
+   ========================= */
+body.dark-mode {
+    --text-color: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --bg-color: #1a1a2e;
+    --white: #1e1e2f;
+}
+
+body.dark-mode header {
+    background-color: #16213e;
+}
+
+body.dark-mode nav {
+    background-color: #0f3460;
+}
+
+body.dark-mode h1 {
+    color: #e2e8f0;
+}
+
+body.dark-mode main section {
+    background-color: #1e1e2f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode main section h2 {
+    color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+}
+
+body.dark-mode main section h3 {
+    color: #cbd5e1;
+}
+
+body.dark-mode table {
+    background: #1e1e2f;
+}
+
+body.dark-mode th {
+    background: #16213e;
+}
+
+body.dark-mode td {
+    border-color: #334155;
+}
+
+body.dark-mode tr:nth-child(even) {
+    background: #252540;
+}
+
+body.dark-mode .portfolio-card {
+    background: #1e1e2f;
+    border-color: #334155;
+    color: var(--text-color);
+}
+
+body.dark-mode .portfolio-card:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0 8px 16px rgba(59, 130, 246, 0.2);
+}
+
+body.dark-mode .portfolio-card h3 {
+    color: var(--secondary-color);
+}
+
+body.dark-mode .framework-callout {
+    background: linear-gradient(135deg, #1e1e2f, #252540);
+    border-left-color: var(--secondary-color);
+}
+
+body.dark-mode p code, body.dark-mode li code {
+    background: #252540;
+    color: #f8a4b8;
+}
+
+body.dark-mode footer {
+    background-color: #0f0f1a;
+}
+
+body.dark-mode .dark-mode-toggle {
+    background: #334155;
+}
+
+body.dark-mode .results-table tr.highlight {
+    background: #3b3520;
+}
